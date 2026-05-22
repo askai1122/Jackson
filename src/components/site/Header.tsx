@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
@@ -34,9 +34,9 @@ export function Header() {
             scrolled ? "glass shadow-soft" : "bg-transparent"
           }`}
         >
-          <Link to="/" className="flex items-center gap-2.5 group">
+          <Link href="/" className="flex items-center gap-2.5 group">
             <span className="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-background/80 ring-1 ring-border overflow-hidden shadow-soft">
-              <img src={logo} alt="Jackson Dental" className="h-9 w-9 object-contain" />
+              <img src={logo.src} alt="Jackson Dental" className="h-9 w-9 object-contain" />
               <span className="absolute -inset-1 rounded-full bg-aurora opacity-30 blur-md -z-10 animate-spin-slow" />
             </span>
             <span className="font-display text-xl tracking-tight">

@@ -9,7 +9,7 @@ export function Footer() {
         <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
-              <img src={logo} alt="Jackson Dental" className="h-10 w-10 rounded-full object-cover" />
+              <img src={logo.src} alt="Jackson Dental" className="h-10 w-10 rounded-full object-cover" />
               <span className="font-display text-2xl">
                 Jackson <span className="text-gradient">Dental</span>
               </span>
